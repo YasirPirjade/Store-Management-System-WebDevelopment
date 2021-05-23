@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  background-color: #f6f7fb;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+header {
+  box-sizing: border-box;
+  padding: 0.8% 3%;
+  box-shadow: 0 4px 4px rgba(180, 180, 180, 0.4);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+}
+
+#left-menu-items,
+#right-menu-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#left-menu-items {
+  width: 40%;
+}
+
+#logo-container {
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  width: 24px;
+  height: 28px;
+  margin-right: 8px;
+}
+
+#logo-name {
+  color: #000;
+  text-decoration: none;
+  font-size: 24px;
+  letter-spacing: -1px;
+}
+
+#menu-container {
+  width: 70%;
+  position: relative;
+  top: 2px;
+}
+
+.menu-items {
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0 8px;
+  letter-spacing: 0;
+  color: #000;
+  font-weight: 400;
+  opacity: 0.7;
+  border-bottom: 2px solid transparent;
+}
+
+.active-page {
+  border-color: #20b883;
+  opacity: 1;
+}
+
+.menu-items:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.loggedOut {
+  display: none;
+}
+
+.loggedIn {
+  display: block;
+}
+
+#login-page-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+#login-form-container {
+  box-shadow: 0 0 18px rgba(180, 180, 180, 0.5);
+  padding: 12px 24px;
+  box-sizing: border-box;
+  width: 30%;
+  border-radius: 4px;
+}
+
+#form-heading {
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  margin: 12px 0 32px 0;
+  font-weight: 500;
+}
+
+#login-form {
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.login-input-fields {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2px 2px 6px 2px;
+  margin-bottom: 16px;
+  border: none;
+  border-bottom: 2px solid #aaa;
+  outline: none;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+::placeholder {
+  font-size: 14px;
+}
+
+#login-btn,
+#sign-up-btn {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  padding: 12px;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  background-color: #20b883;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 24px;
+  outline: none;
+}
+
+#login-btn:hover,
+#sign-up-btn:hover {
+  border-color: #20b883;
+  color: #20b883;
+  background-color: #fff;
+}
+
+#sign-up-container {
+  width: 100%;
+  text-align: center;
+}
+
+#sign-up {
+  color: #20b883;
+  font-size: 14px;
+  margin: 12px 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.active-form {
+  display: flex;
+}
+
+#sign-up-form {
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.inactive-form {
+  display: none;
+}
